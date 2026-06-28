@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Proposal For You ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <!-- Page 1: Welcome -->
+    <div id="page-1" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1 class="title-main">Hi Abiroo ❤️</h1>
+                <p class="subtitle">I made something very special just for you.</p>
+                <button class="btn btn-primary" onclick="goToPage(2)">Begin Our Journey</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: A Small Request -->
+    <div id="page-2" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">A Small Request</h2>
+                <p class="text-content">Please don't leave this website until the end. Every page has been made with love especially for you.</p>
+                <button class="btn btn-primary" onclick="goToPage(3)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Our Friendship Story -->
+    <div id="page-3" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">Our Friendship Story</h2>
+                <p class="text-content story-text">
+                    From the very first conversation, I never imagined that one day you would become one of the most important people in my life. We started as friends, shared laughter, random conversations, little arguments and unforgettable memories. Slowly, friendship turned into love. Every moment with you became precious and every conversation became my favorite part of the day.
+                </p>
+                <button class="btn btn-primary" onclick="goToPage(4)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: A Letter From My Heart -->
+    <div id="page-4" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">A Letter From My Heart</h2>
+                <div class="letter-card">
+                    <p class="letter-greeting">Dear Abiroo,</p>
+                    <p class="letter-text">
+                        There are countless people in this world, but somehow my heart chose you. You make ordinary days feel special. Your smile brings peace to my heart. Every conversation with you became a beautiful memory. I don't know what the future holds, but I know I want you to be a part of it. Today I'm opening my heart to the person who means the most to me. Whatever your answer is, I will always respect you.
+                    </p>
+                </div>
+                <button class="btn btn-primary" onclick="goToPage(5)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Why I Love You -->
+    <div id="page-5" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">Why I Love You</h2>
+                <div class="reasons-grid">
+                    <div class="reason-card">Your smile makes everything better.</div>
+                    <div class="reason-card">You make ordinary conversations unforgettable.</div>
+                    <div class="reason-card">You are kind and caring.</div>
+                    <div class="reason-card">You understand me.</div>
+                    <div class="reason-card">You stay on my mind.</div>
+                    <div class="reason-card">I can be myself with you.</div>
+                    <div class="reason-card">You inspire me.</div>
+                    <div class="reason-card">You make me happy.</div>
+                    <div class="reason-card">You are unique.</div>
+                    <div class="reason-card">Simply because you're Abiroo.</div>
+                </div>
+                <button class="btn btn-primary" onclick="goToPage(6)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: My Promises -->
+    <div id="page-6" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">My Promises</h2>
+                <div class="promises-list">
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to respect you.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to always be honest.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to support you.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to stand beside you.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to protect your trust.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to make you smile.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to appreciate you.</span>
+                    </div>
+                    <div class="promise-item">
+                        <span class="checkbox">✓</span>
+                        <span>I promise to love you with all my heart.</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="goToPage(7)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 7: Before I Ask -->
+    <div id="page-7" class="page">
+        <div class="container">
+            <div class="content-wrapper center-content">
+                <div class="animated-heart">❤️</div>
+                <h2 class="typewriter-text">There is only one question left...</h2>
+                <button class="btn btn-primary" onclick="goToPage(8)">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 8: Proposal -->
+    <div id="page-8" class="page">
+        <div class="container">
+            <div class="content-wrapper center-content">
+                <div class="proposal-heart">❤️</div>
+                <h2 class="proposal-question">Will You Be My Girlfriend?</h2>
+                <div class="button-group">
+                    <button class="btn btn-yes" onclick="handleProposal('yes')">YES ❤️</button>
+                    <button class="btn btn-no" onclick="handleProposal('no')">NO 💔</button>
+                </div>
+                <p id="rejection-message" class="rejection-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 9: Questions -->
+    <div id="page-9" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="title-section">A Few Questions For You</h2>
+                <div id="question-container" class="question-container">
+                    <p id="question-text" class="question-text"></p>
+                    <div class="button-group">
+                        <button class="btn btn-yes" onclick="answerQuestion('yes')">YES ❤️</button>
+                        <button class="btn btn-no" onclick="answerQuestion('no')">NO 💔</button>
+                    </div>
+                </div>
+                <p id="progress-text" class="progress-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 10: Thank You -->
+    <div id="page-10" class="page">
+        <div class="container">
+            <div class="content-wrapper center-content">
+                <h1 class="title-main">Thank you for accepting my proposal ❤️</h1>
+                <p class="text-content">
+                    You have just made me the happiest person in the world. I promise to cherish, respect, and love you with all my heart. This is the beginning of a beautiful journey, and I can't wait to create countless memories with you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thank-you-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Thank You ❤️</h2>
+            <p>Copy your answers and send them to me.</p>
+            <div id="answers-display" class="answers-display"></div>
+            <button class="btn btn-primary" onclick="copyAnswers()">Copy My Answers</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Website made by Ahsaan with love for Abiroo ❤️
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
